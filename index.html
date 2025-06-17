@@ -76,7 +76,7 @@
           </p>
           <ul class="recipes__videos">
             <li>
-             <iframe 
+             <iframe
   class="recipes__iframe"
   width="560"
   height="315"
@@ -90,8 +90,8 @@
                 <span>Aeropress recipe</span> <span>~5 min</span>
             </li>
             <li>
-<iframe 
-  class="recipes__iframe"  
+<iframe
+  class="recipes__iframe"
   width="560"
   height="315"
   src="https://www.youtube.com/embed/st571DYYTR8?si=7jlX_IwAczVMfcyH"
@@ -110,30 +110,55 @@
         <h2 class="reservation__title">Book a table</h2>
         <form class="reservation__form form">
         <fieldset class="form__fieldset">
-          <label for="" class="form__label" Placeholder="Name">
+          <label for="name-input" class="form__label">
             Name *
-            <input required type="text" class="form__input" />
+            <input
+              required
+              type="text"
+              class="form__input"
+              id="name-input"
+              Placeholder="Name Surname"/>
           </label>
         </form>
         <form class="reservation__form form">
-          <label for="" class="form__label">
+          <label for="guests-input" class="form__label">
             Number of Guests *
-            <input required type="number" class="form__input" />
+            <input
+              required
+              id="guests-input"
+              type="number"
+              min="1"
+              max="8"
+              class="form__input"
+              placeholder="1-8"/>
           </label>
         </form>
         <form class="reservation__form form">
-          <label for="" class="form__label">
+          <label for="datetime-input" class="form__label">
             Date & Time *
-            <input required type="datetime-local" class="form__input" />
+            <input
+            required
+            id="datetime-input"
+            type="datetime-local"
+            class="form__input" />
           </label>
         </form>
         <form class="reservation__form form">
-          <label for="" class="form__label">
+          <label for="email-input" class="form__label">
             Your email *
-            <input required type="email" class="form__input" />
+            <input
+            required
+            id="email-input"
+            type="email"
+            class="form__input"
+            placeholder="email@email.com" />
           </label>
         </fieldset>
         <button class="form__button">Book a table</button>
+          <label for="" class="form__label">
+            <input required type="checkbox" class="form__input"  />
+            I agree with the terms of use
+          </label>
         </form>
         <section class="about"></section>
         <section id="menu" class="menu"></section>
