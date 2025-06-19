@@ -13,4 +13,4 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Suggested improvement - A more in depth exploration of github/repository. I had a tough time getting that down.

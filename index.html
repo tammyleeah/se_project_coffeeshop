@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Landing Page" />
-    <meta name="author" content="Tammy Beiswenger" />
+    <meta name="author" content="Tammy Potter" />
     <meta name="keywords" content="HTML, CSS" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,30 +76,31 @@
           </p>
           <ul class="recipes__videos">
             <li>
-             <iframe
-  class="recipes__iframe"
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/j6VlT_jUVPc?si=0b_PYtHrC51O0J21"
-  title="YouTube video player"
-  style="border: none;"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe>
-                <span>Aeropress recipe</span> <span>~5 min</span>
+              <iframe
+                class="recipes__iframe"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=0b_PYtHrC51O0J21"
+                title="YouTube video player"
+                style="border: none"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <span>Aeropress recipe</span> <span>~5 min</span>
             </li>
             <li>
-<iframe
-  class="recipes__iframe"
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/st571DYYTR8?si=7jlX_IwAczVMfcyH"
-  title="YouTube video player"
-  style="border: none;"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen></iframe>
+              <iframe
+                class="recipes__iframe"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=7jlX_IwAczVMfcyH"
+                title="YouTube video player"
+                style="border: none"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
               <p class="recipes__video-caption">
                 <span>French press recipe</span> <span>~15 min</span>
               </p>
@@ -107,68 +108,193 @@
           </ul>
         </section>
         <section id="table" class="reservation">
-        <h2 class="reservation__title">Book a table</h2>
-        <form class="reservation__form form">
-        <fieldset class="form__fieldset">
-          <label for="name-input" class="form__label">
-            Name *
-            <input
-              required
-              type="text"
-              class="form__input"
-              id="name-input"
-              Placeholder="Name Surname"/>
-          </label>
-        </fieldset>
-        </form>
-        <form class="reservation__form form">
-          <label for="guests-input" class="form__label">
-            Number of Guests *
-            <input
-              required
-              id="guests-input"
-              type="number"
-              min="1"
-              max="8"
-              class="form__input"
-              placeholder="1-8"/>
-          </label>
-        </form>
-        <form class="reservation__form form">
-          <label for="datetime-input" class="form__label">
-            Date & Time *
-            <input
-            required
-            id="datetime-input"
-            type="datetime-local"
-            class="form__input" />
-          </label>
-        </form>
-        <form class="reservation__form form">
-          <label for="email-input" class="form__label">
-            Your email *
-            <input
-            required
-            id="email-input"
-            type="email"
-            class="form__input"
-            placeholder="email@email.com" />
-          </label>
-        <button class="form__button">Book a table</button>
-          <label for="terms-input" class="form__label form__label_type_checkbox">
-            <input 
-              required 
-              id="terms-input"
-              type="checkbox" 
-              class="form__checkbox"  />
-            I agree with the terms of use
-          </label>
-        </form>
-      </section>
-        <section class="about"></section>
-        <section id="menu" class="menu"></section>
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="name-input" class="form__label">
+                Name *
+                <input
+                  required
+                  type="text"
+                  class="form__input"
+                  id="name-input"
+                  placeholder="Name Surname"
+                />
+              </label>
+            </fieldset>
+          </form>
+          <form class="reservation__form form">
+            <label for="guests-input" class="form__label">
+              Number of Guests *
+              <input
+                required
+                id="guests-input"
+                type="number"
+                min="1"
+                max="8"
+                class="form__input"
+                placeholder="1-8"
+              />
+            </label>
+          </form>
+          <form class="reservation__form form">
+            <label for="datetime-input" class="form__label">
+              Date & Time *
+              <input
+                required
+                id="datetime-input"
+                type="datetime-local"
+                class="form__input"
+              />
+            </label>
+          </form>
+          <form class="reservation__form form">
+            <label for="email-input" class="form__label">
+              Your email *
+              <input
+                required
+                id="email-input"
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+              />
+            </label>
+            <button class="form__button">Book a table</button>
+            <label
+              for="terms-input"
+              class="form__label form__label_type_checkbox"
+            >
+              <input
+                required
+                id="terms-input"
+                type="checkbox"
+                class="form__checkbox"
+              />
+              I agree with the terms of use
+            </label>
+          </form>
+        </section>
+        <section id="menu" class="menu">
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__subtitle">
+            We brew coffee locally roasted, Fairtrade certified beans and use
+            biodegradable cups. All teas from our collection are $2/cup.
+          </p>
+          <ul class="menu__cards">
+            <li class="card">
+              <h3 class="card__title">Filter</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Espresso</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Filter <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Baked Goods</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+                <li class="card__list-item">
+                  Regular (12oz) <span class="card__list-divider"></span> $1
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="about__title">About the coffee shop</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Our coffee shop is located in the Triple Peaks Library. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
+          </div>
+          <div class="about__circle"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
+        </section>
       </main>
-      <footer id="footer" class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Triple Espresso Logo"
+            class="footer__logo"
+          />
+          <div class="footer__column">
+          <h3 class="footer__column-heading">Social Media</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link"
+                ><img
+                  src="./images/facebook_white.svg"
+                  alt="Facebook icon"
+                  class="footer__social-icon"
+                />Facebook</a >
+            </li>
+            <li class="footer__list-item">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/instagram_white.svg"
+                alt="Instagram icon"
+                class="footer__social-icon"
+              />Instagram</a>
+          </li>
+          </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2025 Tammy Potter</p>
+      </div>
+      </footer>
     </div>
   </body>
 </html>
